@@ -1,0 +1,43 @@
+.designtext h2{
+    color: #fff;
+
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff;
+                 0 0 160px #fff;
+}
+
+
+
+.contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px
+}
+
+.contain .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.contain .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+
+}
+
+.contain .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+
+}

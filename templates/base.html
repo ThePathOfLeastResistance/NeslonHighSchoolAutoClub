@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    {% block styles %}
+    <!-- Load Bootstrap-Flask CSS here -->
+    {{ bootstrap.load_css() }}
+    <!-- Link to the styles.css here to apply styling to all the child templates.-->
+
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+
+  <div class="container-fluid sticky-top bg-white">
+    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+      <h3 class="d-none d-lg-block d-flex align-items-center px-5 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+Nelson High School
+      </h3>
+      <ul class="nav nav-pills px-5 h5">
+        <li class="nav-item px-4"><a href="{{ url_for('home') }}" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="{{ url_for('design') }}">Design</a></li>
+          <li class="nav-item px-4 "><a class="nav-link" href="{{ url_for('team') }}">Team</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="{{url_for('event')}}">Event</a></li>
+      </ul>
+    </header>
+  </div>
+
+    {% block content %}{% endblock %}
+  {{ bootstrap.load_js() }}
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+  </body>
+</html>
