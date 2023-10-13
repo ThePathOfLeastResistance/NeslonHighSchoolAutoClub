@@ -41,3 +41,15 @@
   border-radius: 5px;
 
 }
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.hero {
+    background-image: linear-gradient(to right bottom, #000000, #1a1a1a, #2d2c2c, #414040, #565555, #565555, #565555, #565555, #414040, #2d2c2c, #1a1a1a, #000000);
+    height: 75vh;
+
+}
