@@ -43,7 +43,7 @@
 }
 
 .card-img-top {
-    width: 100%;
+        width: 100%;
     height: 15vw;
     object-fit: cover;
 }
@@ -54,20 +54,19 @@
 }
 
 .custom-bg{
-    background-image: linear-gradient(45deg, #27374D, #DDE6ED);
+    background-image: linear-gradient(45deg, #27374D, #526D82, #394867, #394867);
 }
 
 .timeline{
     position: relative;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 100px auto;
-
 }
 
 .timecontainer{
-    padding: 10px 50px;
+    padding: 50px 70px;
     position: relative;
-    width: 50%;
+    width: 95%;
     animation: movedown 1s linear forwards;
     opacity: 0;
 }
@@ -109,42 +108,49 @@
 
 
 .text-box{
-    padding: 20px 30px;
-    background: #fff;
+    padding: 20px 20px;
+    background: #9DB2BF;
     position: relative;
     border-radius: 6px;
+    color: #27374D;
     font-size: 15px;
+    box-shadow: 0 0 10px #9DB2BF,
+                 0 0 20px #9DB2BF,
+                 0 0 40px #9DB2BF,
+                 0 0 80px #9DB2BF,
+                 0 0 120px #9DB2BF;
+                 0 0 160px #fff;
 }
 
 .left-timecontainer{
-    left: 0;
+
 }
 
 .right-timecontainer{
-    left: 50%;
+    left: 5%;
 }
 
-.timecontainer img{
+.timecontainer .img-time {
     position: absolute;
-    width: 40px;
+    width: 100px;
     border-radius: 50%;
-    right: -20px;
-    top: 32px;
+    right: -40px;
+    top: 60px;
     z-index: 10;
 }
 
-.right-timecontainer img{
-    left: -20px;
+.right-timecontainer .img-time {
+    left: -4em;
 }
 
 .timeline::after{
     content: '';
     position: absolute;
-    width: 8px;
+    width: 12px;
     height: 100%;
     background: #fff;
     top: 0;
-    left: 50%;
+    left: 3%;
     margin-left: -3px;
     z-index: -1;
     animation: moveline 1s linear forwards;
@@ -168,7 +174,7 @@
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #fff;
+    border-left: 15px solid #9DB2BF;
     right: -14px;
 }
 
@@ -178,17 +184,20 @@
     position: absolute;
     top: 28px;
     z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid #fff;
-    left: -14px;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-right: 35px solid #9DB2BF;
+    left: -25px;
 }
 
 @media screen and (max-width: 600px){
     .timeline{
-        margin: 50px auto;
+        margin: 30px auto;
     }
-
+    .right-timecontainer .img-time {
+        left: 1px;
+        width: 70px;
+    }
     .timeline::after{
         left: 31px;
     }
@@ -206,12 +215,14 @@
     .right-timecontainer{
         left: 0;
     }
-    .left-timecontainer img, .right-timecontainer img{
+    .right-timecontainer h4{
         left: 10px;
     }
     .left-container-arrow, .right-container-arrow{
-        border-right: 15px solid #fff;
+        border-right: 20px solid #9DB2BF;
         border-left: 0;
-        left: -14px;
+        left: -20px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
     }
     }
