@@ -16,10 +16,6 @@ def home():
 def design():
     return render_template("design.html")
 
-@app.route('/team')
-def team():
-    return render_template("team.html")
-
 @app.route('/event')
 def event():
     return render_template("event.html")
