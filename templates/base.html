@@ -13,26 +13,52 @@
     <!-- Link to the styles.css here to apply styling to all the child templates.-->
 
     {% endblock %}
-    <link rel="icon" href = "static/assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="icon"
+      href="static/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-
-  <div class="container-fluid sticky-top bg-white">
-    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom px-md-4">
-      <h3 class="d-none d-lg-block d-flex align-items-center px-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-Nelson High School
-      </h3>
-      <ul class="nav nav-pills px-md-5 h5">
-        <li class="nav-item px-lg-4"><a href="{{ url_for('home') }}" class="nav-link" aria-current="page">Home</a></li>
-          <li class="nav-item px-lg-4"><a class="nav-link" href="{{ url_for('design') }}">Design</a></li>
-          <li class="nav-item px-lg-4"><a class="nav-link" href="{{url_for('event')}}">Event</a></li>
-      </ul>
-    </header>
-  </div>
-
     {% block content %}{% endblock %}
-  {{ bootstrap.load_js() }}
-  <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+
+    <div class="col-md-4 d-flex align-items-center">
+      <a
+        href="/"
+        class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+      >
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary"
+        >© 2024 Nelson High School EV Team</span
+      >
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-body-secondary" href="#"
+          ><svg class="bi" width="24" height="24">
+            <use xlink:href="#twitter"></use></svg
+        ></a>
+      </li>
+      <li class="ms-3">
+        <a class="text-body-secondary" href="#"
+          ><svg class="bi" width="24" height="24">
+            <use xlink:href="#instagram"></use></svg
+        ></a>
+      </li>
+      <li class="ms-3">
+        <a class="text-body-secondary" href="#"
+          ><svg class="bi" width="24" height="24">
+            <use xlink:href="#facebook"></use></svg
+        ></a>
+      </li>
+    </ul>
+
+    {{ bootstrap.load_js() }}
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
   </body>
 </html>
