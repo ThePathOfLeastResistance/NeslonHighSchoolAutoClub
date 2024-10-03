@@ -5,7 +5,10 @@
 }
 
 
-
+.sponsorImg {
+    width: auto;
+    max-height: 150px;
+}
 
 .contain{
   display: flex;
