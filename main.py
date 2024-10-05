@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import os
 from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
@@ -7,7 +6,7 @@ app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
+
 
 bootstrap = Bootstrap5(app)
 
