@@ -5,10 +5,6 @@ app = Flask(__name__)
 
 bootstrap = Bootstrap5(app)
 
-app = Flask(__name__)
-
-
-bootstrap = Bootstrap5(app)
 
 @app.route('/')
 def home():
