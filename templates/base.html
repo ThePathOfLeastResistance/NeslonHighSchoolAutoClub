@@ -28,7 +28,11 @@
         href="/"
         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
       >
-        <img width="40" height="32" src="static/assets/images/logo.png" />
+        <img
+          width="40"
+          height="32"
+          src="{{ url_for('static', filename  = 'assets/images/logo.png') }}"
+        />
         <span class="fs-4 mx-3 text-dark">Nelson High School EV Team</span>
       </a>
 

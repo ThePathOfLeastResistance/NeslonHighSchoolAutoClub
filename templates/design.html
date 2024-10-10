@@ -25,7 +25,7 @@
       </div>
       </div>
       <div class="row d-none d-lg-block">
-        <img src = "static/assets/images/carpage3.png">
+        <img src="{{url_for('static', filename = 'assets/images/carpage3.png') }}">
       </div>
       <div class="row">
         <div class="p-lg-5 mb-4 bg-body-tertiary rounded-3">
@@ -41,7 +41,7 @@
         <h2 class="pb-2 border-bottom">The Front</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 d-flex p-2" >
           <div class="feature col">
-            <img src="static/assets/images/steering.JPG" class = "img-fluid">
+            <img src="{{url_for('static', filename = 'assets/images/steering.JPG') }}" class = "img-fluid">
           </div>
           <div class="feature col my-auto text-center pt-lg-0 pt-5">
             <h2 >Break System</h2>
@@ -82,7 +82,7 @@
         </div>
          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 d-flex p-2" >
           <div class="feature col">
-            <img src="static/assets/images/11b.JPG" class = "img-fluid">
+            <img src="{{url_for('static', filename = 'assets/images/11b.JPG') }}" class = "img-fluid">
           </div>
           <div class="feature col my-auto text-center pt-lg-0 pt-5">
             <h2 >Steering System</h2>
@@ -137,7 +137,7 @@
             </div>
             <div class="col-lg-7 fluid-container bg-body-tertiary text-center overflow-hidden">
               <div>
-                <img class = "img-fluid" src="static/assets/images/IMG_5374-removebg-preview (1).png">
+                <img class = "fluid-image" src = "{{url_for('static', filename = 'assets/images/IMG_5374-removebg-preview (1).png') }}">
               </div>
             </div>
         </div>
@@ -173,7 +173,7 @@
   <div class = "container-fluid p-5 mx-auto">
     <div class = "row">
       <div class = "col-lg-3 container-fluid">
-            <img clas = "img-fluid" src="static/assets/images/Screenshot 2023-10-13 231027.png">
+            <img class="img-fluid"  src=" {{url_for('static', filename = 'assets/images/Screenshot 2023-10-13 231027.png') }}">
       </div>
       <div class = "col-lg-3 my-auto">
         <div class = "row py-5 py-lg-0">
@@ -196,7 +196,7 @@
       <div class = "col-lg-6">
         <div class = "row pb-md-5">
           <div class = "col-lg-6">
-              <img class = "img-fluid" src="static/assets/images/9b.JPG">
+              <img class="img-fluid" src="{{url_for('static', filename = 'assets/images/9b.JPG') }}">
           </div>
           <div class = "col-lg-6 my-auto py-5 py-lg-0">
               <div class = "container-fluid">
@@ -211,7 +211,7 @@
             </div>
         <div class = "row ">
           <div class = "col-lg-6">
-              <img class = "img-fluid" src="static/assets/images/IMG_5145.JPG">
+              <img class= "img-fluid" src ="{{url_for('static', filename = 'assets/images/IMG_5145.JPG') }}">
           </div>
           <div class = "col-lg-6 my-auto">
               <div class = "container-fluid py-5 py-lg-0">

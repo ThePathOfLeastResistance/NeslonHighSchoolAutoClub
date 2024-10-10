@@ -12,7 +12,7 @@
                 <div class = "row">
               <div class = "col-lg-1"></div>
               <div class = "col-lg-3 align-items-center d-none d-lg-block" >
-                <img src="static/assets/images/logo.png" class="img-fluid" style="max-width: 80%; height: auto;" alt="Responsive image">
+                <img src="{{ url_for('static', filename = 'assets/images/logo.png') }}" class="img-fluid" style="max-width: 80%; height: auto;" alt="Responsive image">
               </div>
               <div class=" col-lg-8 mx-auto lg-my-5 d-flex align-items-center">
                 <div class = "fluid-container ">
@@ -30,15 +30,15 @@
                 <div class = "contain text-center pb-5">
                 <div class = "box">
                   <div class = "dream">
-                    <img src = "static/assets/images/2.jpg">
-                    <img src="static/assets/images/3c.JPG">
+                    <img src ="{{ url_for('static', filename = 'assets/images/2.jpg') }}">
+                    <img src="{{ url_for('static', filename = 'assets/images/3c.JPG') }}">
                   </div>
                   <div class = "dream">
-                    <img src = "static/assets/images/4.JPG">
+                    <img src = "{{ url_for('static', filename = 'assets/images/4.JPG') }}">
                   </div>
                   <div class = "dream">
-                    <img src = "static/assets/images/8.jpg">
-                    <img src = "static/assets/images/5.JPG">
+                    <img src ="{{ url_for('static', filename = 'assets/images/8.jpg') }}">
+                    <img src ="{{ url_for('static', filename = 'assets/images/5.JPG') }}">
                   </div>
                 </div>
               </div>
@@ -50,10 +50,10 @@
         <h1 class="display-1" style="font-size:9vw;">Electric Vehicle Team</h1>
     </div>
     <div class = "container-fluid">
-        <img src = "static/assets/images/4.JPG" class="img-fluid py-1">
-        <img src = "static/assets/images/8.jpg" class="img-fluid py-1">
-        <img src = "static/assets/images/2.jpg" class="img-fluid py-1">
-        <img src="static/assets/images/3c.JPG" class="img-fluid py-1 mb-5">
+        <img src ="{{ url_for('static', filename = 'assets/images/4.JPG') }}" class="img-fluid py-1">
+        <img src ="{{ url_for('static', filename = 'assets/images/8.jpg') }}" class="img-fluid py-1">
+        <img src ="{{ url_for('static', filename = 'assets/images/2.jpg') }}" class="img-fluid py-1">
+        <img src="{{ url_for('static', filename = 'assets/images/3c.JPG') }}" class="img-fluid py-1 mb-5">
     </div>
 </div>
 
@@ -66,19 +66,19 @@
           </div>
             <div class="row d-flex justify-content-center pt-5 mx-auto ">
               <div class="col-md-4 px-4 pt-lg-1 pt-4">
-                <img class = "sponsorImg pb-4" src = "static/assets/images/Quantas.png">
+                <img class = "sponsorImg pb-4" src ="{{ url_for('static', filename = 'assets/images/Quantas.pn') }}">
                 <h2 class="fw-normal text-center">Quantas</h2>
                 <p class = "text-center mx-5">quantas ms solutions is a premier solutions provider for your clinical analysis mass spectrometry needs. we specialize in utilizing the latest in advanced sample preparation, liquid chromatography and mass spectrometry techniques.</p>
                 <p class = "text-center"><a class="btn" href="https://quantasms.com/" style="background-color: #212A3E; color: #F1F6F9">Website »</a></p>
               </div>
               <div class="col-md-4 px-4 pt-lg-1 pt-4">
-                <img class = "sponsorImg pb-4" src = "static/assets/images/rsilogo.png">
+                <img class = "sponsorImg pb-4" src ="{{ url_for('static', filename = 'assets/images/rsilogo.png') }}">
                 <h2 class="fw-normal">Riders Solutions INC</h2>
                 <p class = "text-center mx-5">Welcome to riderssolutions.ca Where Electric Bikes & scooters has been our pride and passion since 2008! Over the years we have served thousands of customers all over Canada helping them acquire their e-bike of choice.</p>
                 <p class = "text-center"><a class="btn" href="https://riderssolutions.ca/" style="background-color: #212A3E; color: #F1F6F9">Website »</a></p>
               </div>
               <div  class="col-md-4 px-4  pt-lg-1 pt-4">
-                <img  class = "sponsorImg pb-4" src = "static/assets/images/aa.png">
+                <img  class = "sponsorImg pb-4" src ="{{ url_for('static', filename = 'assets/images/aa.png') }}">
                 <h2 class="fw-normal text-center">A&A</h2>
                 <p class = "text-center mx-5">A&A Discount Auto Parts is a one-stop shop with a vast inventory of OEM and aftermarket automotive products, including parts, accessories, tires, rims, and more, backed by expert guidance and budget-friendly options.</p>
                 <p class = "text-center"><a class="btn" href="https://aadiscountauto.ca/" style="background-color: #212A3E; color: #F1F6F9">Website »</a></p>
@@ -93,7 +93,7 @@
 </h1>
               </div>
               <div class="col-md-5 my-auto" >
-                <img class = "img-fluid py-3 px-lg-5" src="static/assets/images/8.jpg">
+                <img class = "img-fluid py-3 px-lg-5" src="{{ url_for('static', filename = 'assets/images/8.jpg') }}">
             </div>
         </div>
 
@@ -114,7 +114,7 @@
             <h1 class="pb-2 text-center">Our Competitive Edge:</h1>
             <div class="row g-4 pt-3">
               <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-5 flex-shrink-0 me-3 rounded">
+                <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-5 flex-shrink-0 me-3 rounded">
                   <svg fill="#000000" height="2em" width="2em" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 475.993 475.993" xml:space="preserve">
                     <g>
                         <path d="M237.997,451.276c13.39,0,24.283-10.894,24.283-24.283s-10.894-24.283-24.283-24.283s-24.283,10.894-24.283,24.283
@@ -150,7 +150,7 @@
               </div>
 
               <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-5 flex-shrink-0 me-3 rounded">
+                <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-5 flex-shrink-0 me-3 rounded">
                   <svg fill="#000000" height="2em" width="2em" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              viewBox="0 0 487.52 487.52" xml:space="preserve">
                   <g>
@@ -227,7 +227,7 @@
               </div>
 
               <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-5 flex-shrink-0 me-3 rounded">
+                <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-5 flex-shrink-0 me-3 rounded">
                   <svg height="2em" width="2em" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                          viewBox="0 0 512 512"  xml:space="preserve">
                     <style type="text/css">
